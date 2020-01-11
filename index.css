@@ -1,0 +1,41 @@
+body {
+  font-family: roboto;
+}
+
+#characters-container {
+  display: flex;
+}
+
+#regions-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.region-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background-color: #d24;
+  margin: 10px;
+  transition-property: transform, opacity;
+  transition-duration: 300ms;
+  opacity: 1;
+  box-shadow: 3px 3px 2px .1px #000;
+}
+
+.region-box:hover {
+  opacity: .5;
+  transform: scale(1.1);
+}
+
+.region-box a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  text-shadow: .7px .7px #333;
+}
